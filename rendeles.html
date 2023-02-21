@@ -47,71 +47,68 @@
           <a href="elerhetoseg.html">elérhetőség</a>
           <p>fül alatt. Köszönettel golden_és_labrador_retriever csapata!</p>
         </aside>
-        <article class="flex-item:nth-child(2)">
-          <div class="flex-container2">
-            <div class="regisztracio">
-              <form action="">
-                <fieldset>
-                  <legend>Regisztráció</legend>
-                  <label for="veznev">Vezetéknév:</label>
-                  <input type="text" id="veznev" name="veznev" /><br />
-                  <label for="kernev">Keresztnév:</label>
-                  <input type="text" id="kernev" name="kernev" /><br />
-                  <label for="email">Email cím:</label>
-                  <input type="email" id="email" name="email" />
+        <article>
+          <form class="content">
+            <div class="sor_rend">
+              <div class="oszlop_rend">
+                <legend>Regisztráció</legend>
+                <div class="input_csoport">
+                  <label for="nev">Név:</label>
+                  <input type="text" id="nev" name="nev" />
+                </div>
+                <div class="input_csoport">
+                  <label for="phone">Keresztnév:</label>
+                  <input type="tel" id="phone" name="phone" />
+                </div>
+                <div class="input_csoport">
+                  <label for="email_a">Email cím:</label>
+                  <input type="email" id="email_a" name="email_a" />
+                </div>
+                <div class="input_csoport">
+                  <label for="pickup">Átvétel időpontja:</label>
+                  <input type="datetime-local" id="pickup" name="pickup" />
+                </div>
+                <div class="input_csoport">
+                  <label for="place">Átvétel helye:</label>
+                  <select name="hely" id="place">
+                    <option value="" selected="selected">Válasz egyet</option>
+                    <option value="1kenel">Budapesti Kenel</option>
+                    <option value="2kenel">Miskolci Kenel</option>
+                    <option value="3kenel">Győri Kenel</option>
+                  </select>
+                </div>
+              </div>
+              <div class="oszlop_rend">
+                <fieldset class="fajta">
+                  <label for="fajta">Milyen fajtát szeretnél?</label>
+                  <select name="fajta" id="fajta">
+                    <option value="" selected="selected">Válasz egyet</option>
+                    <option value="husky">Husky</option>
+                    <option value="retriver">Golden Retriver</option>
+                    <option value="malamut">Alaszkai Malamut</option>
+                    <option value="juhasz">Németjuhász</option>
+                    <option value="labrador">Labrador</option>
+                  </select>
                 </fieldset>
-                <div class="velemeny">
-                  <fieldset>
-                    <legend>Vélemény</legend>
-                    <label for="velemeny">Írd meg a véleményed rólunk</label
-                    ><br />
-                    <textarea name="velemeny" id="velemeny"></textarea>
-                  </fieldset>
-                </div>
-                <div class="kutya_love">
-                  <fieldset>
-                    <legend>Milyen kuytust szeretsz?</legend>
-                    <label for="fajta">Kutyus fajtája:</label>
-                    <select name="fajta" id="fajta">
-                      <option value="husky">Husky</option>
-                      <option value="golden">Golden Retriver</option>
-                      <option value="xoly">Border Colly</option>
-                      <option value="nemetj">Németjuhász</option>
-                      <option value="malamut">Alaszkai Malamut</option>
-                      <option value="more">Egyéb</option>
-                    </select>
-                  </fieldset>
-                  <fieldset>
-                    <legend>Milyen a kutyus habitusa amit szeretsz?</legend>
-                    <input
-                      type="radio"
-                      id="aktiv"
-                      name="habits"
-                      value="Aktiv"
-                    />
-                    <label for="aktiv">Szeretem ha aktív</label><br />
-                    <input
-                      type="radio"
-                      id="jatekos"
-                      name="habits"
-                      value="Jatekos"
-                    />
-                    <label for="jatekos">Szeretem ha játszhatok vele</label
-                    ><br />
-                    <input
-                      type="radio"
-                      id="lusta"
-                      name="habits"
-                      value="Lusta"
-                    />
-                    <label for="lusta"
-                      >Szeretem ha velem együtt fekszik a kanapén</label
-                    ><br />
-                  </fieldset>
-                </div>
-              </form>
+                <fieldset class="habits">
+                  <label for="active"
+                    ><input type="radio" id="active" name="habit" />Fussa le
+                    velem a maratont</label
+                  >
+
+                  <label for="jatekos"
+                    ><input type="radio" id="jatekos" name="habit" />Játszom
+                    velem sokat</label
+                  >
+
+                  <label for="lusta"
+                    ><input type="radio" id="lusta" name="habit" />Aludjon velem
+                    a kanapén</label
+                  >
+                </fieldset>
+              </div>
             </div>
-          </div>
+          </form>
         </article>
         <aside class="flex-item:nth-child(3)" style="max-width: 200px">
           <h2 style="padding-top: 10px">Hamarosan!</h2>

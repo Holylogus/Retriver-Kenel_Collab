@@ -65,33 +65,36 @@ header {
     -ms-flex-item-align: auto;
     align-self: auto;
 }
-.flex-item:nth-child(2) {
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-    -webkit-flex: 1 2 auto;
-    -ms-flex: 1 2 auto;
-    flex: 1 2 auto;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
-    height: 700px;
-    background-size: cover;  
-    width: 40%;
-    margin: 0px;
-}
-.flex-container2{
+
+.content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 1em;
+  }
+.sor_rend{
+    display: flex;
+    justify-content: center;
 }
-.regisztracio{
-    order: 1;
+.oszlop_rend{
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
 }
-.kutya_love{
-    order: 2;
+.input_csoport{
+    display: flex;
 }
-.velemeny{
-    order: 3;
+.input_csoport label{
+    margin-right: 1em;
+    padding: 0.5em;
+}
+.input_csoport input{
+    flex: 6;
+    padding: 0.5em;
+    margin-bottom: 1em;
+
+}
+.habits{
+    display: block;
 }
 article{
     background-color: rgb(228, 184, 8);
