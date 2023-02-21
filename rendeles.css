@@ -80,6 +80,19 @@ header {
     width: 40%;
     margin: 0px;
 }
+.flex-container2{
+    display: flex;
+    flex-direction: row;
+}
+.regisztracio{
+    order: 1;
+}
+.kutya_love{
+    order: 2;
+}
+.velemeny{
+    order: 3;
+}
 article{
     background-color: rgb(228, 184, 8);
     background-size: cover;  

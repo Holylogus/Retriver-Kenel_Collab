@@ -48,20 +48,70 @@
           <p>fül alatt. Köszönettel golden_és_labrador_retriever csapata!</p>
         </aside>
         <article class="flex-item:nth-child(2)">
-          <form action="/action_page.php">
-            <fieldset>
-              <legend>Regisztráció:</legend>
-              <label for="fname">Vezetéknév:</label>
-              <input type="text" id="fname" name="fname" /><br /><br />
-              <label for="lname">Keresztnév:</label>
-              <input type="text" id="lname" name="lname" /><br /><br />
-              <label for="email">Email-cím:</label>
-              <input type="email" id="email" name="email" /><br /><br />
-              <label for="birthday">Birthday:</label>
-              <input type="date" id="birthday" name="birthday" /><br /><br />
-              <input type="submit" value="Submit" />
-            </fieldset>
-          </form>
+          <div class="flex-container2">
+            <div class="regisztracio">
+              <form action="">
+                <fieldset>
+                  <legend>Regisztráció</legend>
+                  <label for="veznev">Vezetéknév:</label>
+                  <input type="text" id="veznev" name="veznev" /><br />
+                  <label for="kernev">Keresztnév:</label>
+                  <input type="text" id="kernev" name="kernev" /><br />
+                  <label for="email">Email cím:</label>
+                  <input type="email" id="email" name="email" />
+                </fieldset>
+                <div class="velemeny">
+                  <fieldset>
+                    <legend>Vélemény</legend>
+                    <label for="velemeny">Írd meg a véleményed rólunk</label
+                    ><br />
+                    <textarea name="velemeny" id="velemeny"></textarea>
+                  </fieldset>
+                </div>
+                <div class="kutya_love">
+                  <fieldset>
+                    <legend>Milyen kuytust szeretsz?</legend>
+                    <label for="fajta">Kutyus fajtája:</label>
+                    <select name="fajta" id="fajta">
+                      <option value="husky">Husky</option>
+                      <option value="golden">Golden Retriver</option>
+                      <option value="xoly">Border Colly</option>
+                      <option value="nemetj">Németjuhász</option>
+                      <option value="malamut">Alaszkai Malamut</option>
+                      <option value="more">Egyéb</option>
+                    </select>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Milyen a kutyus habitusa amit szeretsz?</legend>
+                    <input
+                      type="radio"
+                      id="aktiv"
+                      name="habits"
+                      value="Aktiv"
+                    />
+                    <label for="aktiv">Szeretem ha aktív</label><br />
+                    <input
+                      type="radio"
+                      id="jatekos"
+                      name="habits"
+                      value="Jatekos"
+                    />
+                    <label for="jatekos">Szeretem ha játszhatok vele</label
+                    ><br />
+                    <input
+                      type="radio"
+                      id="lusta"
+                      name="habits"
+                      value="Lusta"
+                    />
+                    <label for="lusta"
+                      >Szeretem ha velem együtt fekszik a kanapén</label
+                    ><br />
+                  </fieldset>
+                </div>
+              </form>
+            </div>
+          </div>
         </article>
         <aside class="flex-item:nth-child(3)" style="max-width: 200px">
           <h2 style="padding-top: 10px">Hamarosan!</h2>
