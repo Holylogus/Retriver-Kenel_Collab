@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+header {
+    padding: 0px;
+    background-color: #333;
+    height: 55px;
+}
+
+p { all: unset;}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    padding-left: 10px;
+}
+  
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+.topnav a:hover {color: rgb(228, 184, 8);}
+  
+.topnav-right {padding-right: 20px; float: right;}
+
+.active{background-color: rgb(72, 70, 70);}
+
+.flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.flex-item:nth-child(1) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 2 auto;
+    -ms-flex: 1 2 auto;
+    flex: 1 2 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.flex-item:nth-child(2) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 2 auto;
+    -ms-flex: 1 2 auto;
+    flex: 1 2 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    height: 700px;
+    background-image: url(kepek/goldihatter1.jpg);
+    background-size: cover;  
+    width: 40%;
+    margin: 0px;
+}
+
+.flex-item:nth-child(3) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 2 auto;
+    -ms-flex: 1 2 auto;
+    flex: 1 2 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    background-color: white; 
+    margin: 0px; 
+    text-align: center;
+}
+
+article{
+    padding: 5px;
+    padding-top: 20px;
+    background-size: cover;  
+    width: max-content;
+    width: 100%;
+    height: 550px;
+    margin: 0px;
+    background-color: rgb(228, 184, 8);
+    font-weight: bold;
+    padding-right: 25px;
+    padding-left: 40px;
+}
+
+article a {color: black; text-decoration: none;}
+article a:hover{color: black;}
+
+aside{
+    color: white;
+    height: 550px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(136, 77, 46);
+}
+
+aside a{
+    color: white; 
+    text-align: center;
+}
+
+aside a:hover{
+    color: white;
+}
+
+p{all: unset;}
+
+
+@media all and (min-width:800px){}
+
+@media all and (min-width:600px){}
+
+footer {
+    padding-top: 3px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+article button{
+    background-color: rgb(136, 77, 46);
+    border: none;
+    border-radius: 5px;
+    margin-right: auto;
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: 310px;
+    margin-right: 250px;
+}
